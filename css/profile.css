@@ -1,0 +1,168 @@
+* {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    background-color: #f8f5ff;
+}
+.main {
+    margin: 0;
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: 40% auto;
+    grid-template-areas: "profile" "activity";
+    grid-gap: 1rem;
+    padding: 3rem;
+}
+
+.profile-container, .activities-list-container, .delete-account-container {
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, .15);
+    margin: 0;
+    overflow: hidden;
+}
+.profile-container {
+    display: grid;
+    grid-template-rows: 200px 400px;
+    max-height: 600px;
+}
+#background-image-container {
+    background-color: #00C896;
+    background-image: linear-gradient(to left bottom, #00c896, #30d383, #58dd6a, #7fe54a, #a8eb12);
+}
+#image-container {
+    background-color: #fff;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    padding: 5px;
+    transform: translateY(130px) translateX(30px);
+}
+#image-container img {
+    background-color: #fff;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#details {
+    padding: 3rem 2rem;
+    position: relative;
+    color: #3a3a3a;
+}
+#details h3 {
+    font-weight: 600;
+    margin: 1.5rem 0;
+}
+.contact {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.contact p{
+    font-weight: 400;
+    opacity: .8;
+}
+#edit-profile-link {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    text-decoration: none;
+    color: #3a3a3a;
+}
+#edit-profile-link:hover {
+    color: rgba(58, 58, 58, .6);
+    text-decoration: underline;
+}
+
+.activity-and-delete {
+    display: grid;
+    grid-template-rows: 70% auto;
+    grid-gap: 1rem;
+}
+
+.activities-list-container {
+    padding: 2rem;
+    overflow: auto;
+    max-height: 600px;
+}
+.activities-list-container h3 {
+    margin: 0 0 30px 0;
+    color: #3a3a3a;
+    font-weight: 600;
+}
+.activity-item {
+    overflow: hidden;
+    list-style: none;
+    margin: 1rem 0;
+}
+.activity-item:first-child {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+.title {
+    margin: 0;
+    display: block;
+    text-decoration: none;
+    background-color: rgb(247, 247, 247);
+    color: #3a3a3a;
+    font-size: 1.3em;
+    font-weight: 600;
+    padding: 1rem 1.5rem;
+    position: relative;
+    border-radius: 5px;
+    transition: .4s;
+}
+.title:hover {
+    background-color: #00C896;
+    color: #fff;
+    text-decoration: none;
+}
+.activity-detail {
+    background-color: #fcfcfc;
+    padding: 0 1.5rem;
+    overflow: hidden;
+    transition: all .3s;
+    max-height: 0;
+}
+.activity-detail p {
+    margin: 0;
+    line-height: 1.6em;
+}
+.date {
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.delete-account-container {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: #3a3a3a;
+}
+.delete-account-container p {
+    margin: 0;
+    margin-bottom: auto;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+.delete-account-container button {
+    outline: none;
+    border: 1px solid transparent;
+    padding: 0 4rem;
+    height: 40px;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: #e84118;
+    box-shadow: 0 4px 15px rgba(232, 65, 24, .5);
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.delete-account-container button:hover {
+    background-color: #ec532d;
+}

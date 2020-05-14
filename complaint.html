@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+  <title>Tazmanian Complaint</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- Custom styles for this template -->
+  <link href="css/complaint.css" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <!--Complaintservice-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">College</a>
+	  
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+	  
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="activity.html">Activity</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="accommodation.html">Accommodation</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="complaint.html">Complaint</a>
+          </li>
+           <li class="nav-item">
+             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Student</a>
+			  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
+              <a class="dropdown-item" href="login.html">Login/Register</a>
+              <a class="dropdown-item" href="edit.html">Edit Profile</a>
+            </div>
+          </li> 
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <div class="container">
+  <!--Page content-->
+  
+  <!--Jumbotron-->
+	<div class="jumbotron" style="background-image: url(https://cdn.stocksnap.io/img-thumbs/960w/Lake-Mountains_VZBJUVPO25.jpg); background-size: cover">
+	  	<h1 class="display-4">Complaint Section</h1>
+	  	<p class="lead" style="margin-bottom: 50px;">Create and manage your own complaint</p>
+		<a href="#addComplaintModal" class="btn" data-toggle="modal"><i class="material-icons">&#xE147;</i><span>New Complaint</span></a>
+	</div>
+		<div class="container">
+		<!--Table-->
+        <div class="table-wrapper">
+            <div class="table-title">
+                <div class="row">
+                    </div>
+                    </div>
+					
+                    <table class="table table-striped table-hover">
+                    <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Problem Type</th>
+                        <th>Status</th>
+                        <th>Ticket Date/Time</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+				
+				<!--table body-->
+                <tbody>
+                        <td>01</td>
+                        <td>Fan</td>
+						<td>Completed</td>
+                        <td>12-02-2020 10:30AM</td>
+                        <td>
+                            <a href="#editComplaintModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
+                            <a href="#deleteComplaintModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xe92b;</i></a>
+                        </td>
+						</tr>
+					
+						<tr>
+                        <td>02</td>
+                        <td>Cleanlines</td>
+						<td>Completed</td>
+                        <td>28-02-2020 11:50AM</td>
+                        <td>
+                            <a href="#editComplaintModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
+                            <a href="#deleteComplaintModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xe92b;</i></a>
+                        </td>
+						</tr>
+					
+						<tr>
+                        <td>03</td>
+                        <td>Auto Barrier Gate</td>
+						<td>Completed</td>
+                        <td>05-03-2020 10:30AM</td>
+                        <td>
+                            <a href="#editComplaintModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
+                            <a href="#deleteComplaintModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xe92b;</i></a>
+                        </td>
+						</tr>
+						
+						<tr>
+                        <td>04</td>
+                        <td>Book Shelf</td>
+						<td>Pending</td>
+                        <td>10-03-2020 09:10AM</td>
+                        <td>
+                            <a href="#editComplaintModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
+                            <a href="#deleteComplaintModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xe92b;</i></a>
+                        </td>
+						</tr>
+						
+						<tr>
+                        <td>05</td>
+                        <td>Clogged</td>
+						<td>Pending</td>
+                        <td>1-04-2020 05:10PM</td>
+                        <td>
+                            <a href="#editComplaintModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
+                            <a href="#deleteComplaintModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xe92b;</i></a>
+                        </td>
+						</tr>
+						
+						<tr>
+                        <td>06</td>
+                        <td>Bed</td>
+						<td>Pending</td>
+                        <td>20-04-2020 11:40PM</td>
+                        <td>
+                            <a href="#editComplaintModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
+                            <a href="#deleteComplaintModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xe92b;</i></a>
+                        </td>
+						</tr>
+                </tbody>
+            </table>
+			
+			<!--Paging-->
+			<div class="clearfix">
+                <div class="hint-text">Showing <b>1</b> out of <b>2</b> entries</div>
+                <ul class="pagination">
+                    <li class="page-item"><a href="#">Previous</a></li>
+                    <li class="page-item active"><a href="#" class="page-link">1</a></li>
+                    <li class="page-item"><a href="#" class="page-link">2</a></li>
+                    <li class="page-item"><a href="#" class="page-link">Next</a></li>
+                </ul>
+            </div>
+			</div>
+			</div>
+			
+	<!-- Edit Modal HTML -->
+	<div id="addComplaintModal" class="modal fade">
+	<div class="modal-dialog">
+    <div class="modal-content">
+	
+     <form>
+     <div class="modal-header">      
+       <h4 class="modal-title">New Complaint</h4>
+       <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+     </div>
+     <div class="modal-body">     
+	 
+							<div class="form-group">
+								 <label>Problem Type</label>
+								 <select class="select mb-3" name="type" >
+								 
+								  <option value="" style="display:none;"></option>
+								  <option>Acrylic Plate</option>
+								  <option>Air-Conditioner</option>
+								  <optioN>Auto Barrier Gate</option>
+								  <optioN>Bed</option>
+								  <optioN>Book Shelf</option>
+								  <optioN>Cabinet</option>
+								  <optioN>Ceiling</option>
+								  <optioN>Chair</option>
+								  <optioN>Cintern</option>
+								  <optioN>Cleanlines</option>
+								  <optioN>Clogged</option>
+								  <optioN>Clothes Hanger</option>
+								  <optioN>Counter Services</option>
+								  <optioN>Curtain/Blind</option>
+								  <optioN>Door</option>
+								  <optioN>Drain</option>
+								  <optioN>Electric Trip</option>
+								  <optioN>Exhaust Trip</option>
+								  <optioN>Fan</option>
+								  <optioN>Fire Alarm Panel</option>
+								  <optioN>Fridge</option>
+								  <optioN>Gas Stove</option>
+								  <optioN>Gutter</option>
+								  <optioN>Induction Cooker</option>
+								  <optioN>Kettle</option>
+								  <optioN>Lamp</option>
+								  <optioN>Lanscape</option>
+								  <optioN>Leaked</option>
+								  <optioN>Lift</option>
+								  <optioN>LPG Gas</option>
+								  <optioN>Main Holes</option>
+								  <optioN>Mattress</option>
+								  <optioN>MICB</option>
+								  <optioN>Microwave</option>
+								  <optioN>Mirror</option>
+								  <optioN>PA System (Projector/Microphone)</option>
+								  <optioN>Pest Control</option>
+								  <optioN>Piping</option>
+								  <optioN>Road</option>
+								  <optioN>Roof</option>
+								  <optioN>Shower</option>
+								  <optioN>Signage</option>
+								  <optioN>Sink</option>
+								  <optioN>Table</option>
+								  <optioN>Television</option>
+								  <optioN>Tiles/Floor</option>
+								  <optioN>Toilet Bowl</option>
+								  <optioN>Towel Hanger</option>
+								  <optioN>Washing Machine</option>
+								  <optioN>Water Boiler</option>
+								  <optioN>Water Dispenser</option>
+								  <optioN>Water Heater</option>
+								  <optioN>Water Pressure</option>
+								  <optioN>Water Proofing</option>
+								  <optioN>Water Supply</option>
+								  <optioN>Window</option>
+								</select>
+							</div>
+	 
+      <div class="form-group">
+       <label>Problem Description</label>
+       <textarea class="form-control" required rows="3" ></textarea>
+      </div>
+	  
+	  <div class="form-group">
+       <label>Problem Location</label>
+       <textarea class="form-control" required rows="3" ></textarea>
+      </div>
+	  
+      <div class="form-group">
+       <label>Phone No</label>
+       <input type="text" class="form-control" required>
+      </div>     
+	 
+	  <div class="form-group">
+	  <label>Upload File</label>
+	  <input type="file" class="form-control-file" id="exampleFormControlFile1">
+	  <small id="uploadHelpBlock" class="form-text text-muted">Note: only jpg , gif , png ,pdf , doc , docx and max size 5 MB.</small>
+	  </div>
+	 
+	 <!--Radio button for complaint status-->
+	  <hr class="my-4">
+	 <div class="radio">
+	 <p>Current Status of Complaint</p>
+
+	 
+	 <!-- Group of default radios - option 1 -->
+		<div class="custom-control custom-radio">
+		  <input type="radio" class="custom-control-input" id="addNew1" name="groupOfDefaultRadios">
+		  <label class="custom-control-label" for="addNew1">Pending</label>
+		</div>
+
+	<!-- Group of default radios - option 2 -->
+		<div class="custom-control custom-radio">
+		  <input type="radio" class="custom-control-input" id="addNew2" name="groupOfDefaultRadios" checked>
+		  <label class="custom-control-label" for="addNew2">Completed</label>
+		</div>
+		</div>
+	  
+	 </div>
+	
+     <div class="modal-footer">
+      <input type="button" class="btn-1" data-dismiss="modal" value="Cancel">
+      <input type="submit" class="btn-2" value="Add">
+     </div>
+    </form>
+   </div>
+  </div>
+ </div>
+ 
+ <!-- Edit Modal HTML -->
+ <div id="editComplaintModal" class="modal fade">
+  <div class="modal-dialog">
+   <div class="modal-content">
+    <form>
+     <div class="modal-header">      
+      <h4 class="modal-title">Edit Complaint</h4>
+      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+     </div>
+     <div class="modal-body">     
+       <div class="form-group">
+							
+								<label>Problem Type</label>
+								<select class="select mb-3" name="type" >
+								
+								  <option value="" style="display:none;"></option>
+								  <option>Acrylic Plate</option>
+								  <option>Air-Conditioner</option>
+								  <optioN>Auto Barrier Gate</option>
+								  <optioN>Bed</option>
+								  <optioN>Book Shelf</option>
+								  <optioN>Cabinet</option>
+								  <optioN>Ceiling</option>
+								  <optioN>Chair</option>
+								  <optioN>Cintern</option>
+								  <optioN>Cleanlines</option>
+								  <optioN>Clogged</option>
+								  <optioN>Clothes Hanger</option>
+								  <optioN>Counter Services</option>
+								  <optioN>Curtain/Blind</option>
+								  <optioN>Door</option>
+								  <optioN>Drain</option>
+								  <optioN>Electric Trip</option>
+								  <optioN>Exhaust Trip</option>
+								  <optioN>Fan</option>
+								  <optioN>Fire Alarm Panel</option>
+								  <optioN>Fridge</option>
+								  <optioN>Gas Stove</option>
+								  <optioN>Gutter</option>
+								  <optioN>Induction Cooker</option>
+								  <optioN>Kettle</option>
+								  <optioN>Lamp</option>
+								  <optioN>Lanscape</option>
+								  <optioN>Leaked</option>
+								  <optioN>Lift</option>
+								  <optioN>LPG Gas</option>
+								  <optioN>Main Holes</option>
+								  <optioN>Mattress</option>
+								  <optioN>MICB</option>
+								  <optioN>Microwave</option>
+								  <optioN>Mirror</option>
+								  <optioN>PA System (Projector/Microphone)</option>
+								  <optioN>Pest Control</option>
+								  <optioN>Piping</option>
+								  <optioN>Road</option>
+								  <optioN>Roof</option>
+								  <optioN>Shower</option>
+								  <optioN>Signage</option>
+								  <optioN>Sink</option>
+								  <optioN>Table</option>
+								  <optioN>Television</option>
+								  <optioN>Tiles/Floor</option>
+								  <optioN>Toilet Bowl</option>
+								  <optioN>Towel Hanger</option>
+								  <optioN>Washing Machine</option>
+								  <optioN>Water Boiler</option>
+								  <optioN>Water Dispenser</option>
+								  <optioN>Water Heater</option>
+								  <optioN>Water Pressure</option>
+								  <optioN>Water Proofing</option>
+								  <optioN>Water Supply</option>
+								  <optioN>Window</option>
+								</select>
+							</div>
+      <div class="form-group">
+       <label>Problem Description</label>
+       <textarea class="form-control" required rows="3" ></textarea>
+      </div>
+	  
+	  <div class="form-group">
+       <label>Problem Location</label>
+       <textarea class="form-control" required rows="3" ></textarea>
+      </div>
+	  
+      <div class="form-group">
+       <label>Phone No</label>
+       <input type="text" class="form-control" required>
+      </div>     
+	 
+	  <div class="form-group">
+	  <label>Upload File</label>
+	  <input type="file" class="form-control-file" id="exampleFormControlFile1">
+	  <small id="passwordHelpBlock" class="form-text text-muted">Note: only jpg , gif , png ,pdf , doc , docx and max size 5 MB.</small>
+	  </div>
+	  
+	   <!--Radio button for complaint status-->
+	  <hr class="my-4">
+	  <div class="radio">
+	  <p>Current Status of Complaint</p>
+	 
+	 <!-- Group of default radios - option 1 -->
+		<div class="custom-control custom-radio">
+		  <input type="radio" class="custom-control-input" id="EditStatus1" name="groupOfDefaultRadios">
+		  <label class="custom-control-label" for="EditStatus1">Pending</label>
+		</div>
+
+	<!-- Group of default radios - option 2 -->
+		<div class="custom-control custom-radio">
+		  <input type="radio" class="custom-control-input" id="EditStatus2" name="groupOfDefaultRadios" checked>
+		  <label class="custom-control-label" for="EditStatus2">Completed</label>
+		</div>
+		</div>
+	 </div>
+     <div class="modal-footer">
+      <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
+      <input type="submit" class="btn btn-info" value="Save">
+     </div>
+    </form>
+   </div>
+  </div>
+ </div>
+ 
+ <!-- Delete Modal HTML -->
+ <div id="deleteComplaintModal" class="modal fade">
+  <div class="modal-dialog">
+   <div class="modal-content">
+    <form>
+     <div class="modal-header">      
+      <h4 class="modal-title">Delete Records</h4>
+      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+     </div>
+     <div class="modal-body">     
+      <p>Are you sure you want to delete these records?</p>
+     </div>
+     <div class="modal-footer">
+      <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
+      <input type="submit" class="btn btn-danger" value="Delete">
+     </div>
+    </form>
+   </div>
+  </div>
+ </div> 
+  </div>
+  <footer class="py-5">
+  <div class="container">	
+  <p class="m-0 text-center text-white">Copyright &copy; College Website 2020</p>
+  </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

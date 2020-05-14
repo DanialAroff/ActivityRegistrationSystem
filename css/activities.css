@@ -1,0 +1,109 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', 'sans-serif';
+    background-color: #f8f5ff;
+}
+
+#headerla h1{
+    padding-top: 1em;
+    color: #E49D22;
+    font: 60px "Margarine", sans-serif;
+    font-weight: bolder;
+    /* background-color: rgba(242, 243, 243, 0.582); */
+    /* background-image: url(pelangi.gif); */
+    background-repeat: no-repeat;
+    /* font-size: x-large; */
+    /* background-position: right; */
+    text-align: center;
+    border-color: #1D6796;
+    box-sizing: border-box;
+}
+h1 {
+    padding: 2.5rem 3rem 0 3rem;
+    font-weight: bold;
+}
+
+.main{
+    padding: 3em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    grid-gap: 2em;
+}
+
+.carddd{
+    display: grid;
+    grid-template-rows: 200px 200px 60px;
+    grid-template-areas: "image" "details" "button";
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .15);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all .3s ease;
+}
+.carddd:hover {
+    transform: scale(1.1);
+}
+.imageee {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+.detailsss{
+    padding: 20px 25px;
+    background-color: #fff;
+}
+.detailsss h4 {
+    font-weight: bold;
+}
+.detailsss p{
+    color: rgb(87, 87, 87)   
+}
+.register-buttonnn button{
+    outline:none;
+    border: none;
+    width: 100%;
+    height: 100%;
+    background-color: #facf5a;
+    background-color: #00C896;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 0;
+}
+.register-buttonnn button:active{
+    background-color:#E49D22;
+    outline: none;
+}
+.register-buttonnn button:hover{
+    background-color: #f7b544;
+    outline: none;
+}
+#registered-label, #registered-labell, #registered-labelll{
+    margin: 0 20px;
+    text-align: center;
+    align-self: center;
+    font-size: .8em;
+    font-weight: 600;
+    color: rgb(248, 248,248);
+    background-color: #10ac84;
+    padding: .3em .4em;
+    border-radius: 3px;
+/* visibility: false;  */
+    display: none;
+}
+#wan{
+    background-color: #1D6796;
+    background-color: #00C896;
+    outline: none;
+    border: none;
+}
+h2{
+    text-align: center;
+    font-size: 1.5em;
+    color: white;
+    background-color: black;
+    padding-top: .2em;
+    padding-bottom: .2em;
+}

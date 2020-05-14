@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+
+main {
+    display: grid;
+    overflow: auto;
+    /* background-color: #fafcff; */
+    background-color: #f8f5ff;
+    padding: 2rem;
+    grid-gap: 1em;
+    font-family: 'Montserrat', 'Arial', 'sans-serif';
+}
+#switch-status {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+.application-status-section {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    user-select: none;
+}
+.my-modal {
+    display: none;
+    position: fixed;
+    z-index: 2;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, .45);
+}
+.modal-content {
+    background-color: #fff;
+    border: 1px solid transparent;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, .15);
+    margin: auto;
+    padding: 40px 60px;
+    min-width: 400px;
+    width: 40vw;
+    text-align: center;
+}
+.modal-content i {
+    margin-right: 8px;
+    color: #d63031;
+}
+.modal-content p:first-child {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.modal-content p:nth-child(2) {
+    font: 1.1rem;
+    font-weight: 600;
+    opacity: .8;
+}
+.modal-content button {
+    border: 1px solid #636e72;
+    color: #444546;
+    background-color: transparent;
+    padding: .5rem;
+    outline: none;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 5px;
+}
+#cancel-application-button {
+    margin: 15px 0 0 0;
+    border: 1px solid transparent;
+    background-color: #d63031;
+    color: white;
+}
+#cancel-application-button:hover {
+    background-color: #ec3b3b;
+    box-shadow: 0 4px 4px rgba(255, 255, 255, 1),
+    0 1px 4px rgb(245, 24, 24);
+}
+#keep-application-button:hover {
+    text-decoration: underline;
+}
+
+.status-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 500px;
+    width: 80%;
+    height: 540px;
+}
+.my-card {
+    margin-right: 60px;
+}
+.my-card .header {
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+#status {
+    margin: 3.2rem 0;
+    border-left: 5px solid rgb(94, 94, 94);
+    padding: 0 1rem;
+}
+#status_name {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+#status_detail {
+    font-size: 1.1rem;
+    filter: opacity(0.85);
+}
+.apply-button-container {
+    display: flex;
+    flex-direction: column;
+}
+#apply-button {
+    outline: none;
+    border: transparent;
+    background-color: #000;
+    background-color: #00C896;
+    color: #fff;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, .25);
+    box-shadow: 0 8px 20px rgba(0, 200, 150, .5);
+    font-size: 1.2rem;
+}
+#apply-button:hover {
+    background-color: #1f1f1f;
+    background-color: rgba(0, 200, 150, 0.705);
+}
+#cancel-button {
+    outline: none;
+    border: 1px solid #000;
+    background-color: transparent;
+    color: #000;
+    font-size: 1.2rem;
+    margin-top: 1.2rem;
+}
+#apply-button, #cancel-button {
+    transition: transform .1s ease-out;
+    font-weight: 500;
+    padding: .8rem 0;
+    border-radius: 5px;
+}
+#apply-button:active, #cancel-button:active {
+    transform: scale(0.85);
+}
+
+
+#illustration img {
+    min-height: 100px;
+    max-height: 320px;
+    width: 370px;
+    margin: 7rem 0;
+    pointer-events: none;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    outline: none;
+    /* animation: illus 1s ease; */
+}
+
+.form-section {
+    background-color: white;
+    box-shadow: 
+    0px 5px 8px rgba(0, 0, 0, .1), 
+    0 1px 1px 0 rgba(0, 0, 0, .15);
+    border-radius: 6px;
+    padding: 2rem 3rem;
+    font-weight: 500;
+}
+/* for the section's header */
+#form-header {
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+.form-section {
+    padding: 40px 50px;
+}
+
+.form-section {
+    display: none;
+    position: relative;
+    min-width: 400px;
+    max-width: 600px;
+    justify-self: center;
+    border-top: 10px solid #000;
+}
+#back-button {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    border: none;
+    background: none;
+    outline: none;  
+    color: rgb(80, 80, 80);
+}
+#back-button:hover {
+    color: rgb(163, 163, 163);
+}
+.label {
+    font-weight: 500;
+}
+#form-header {
+    /* testing for responsive font size */
+    font-size: calc(20px + 1vw);
+}
+.first-col, .second-col {
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}   
+textarea {
+    resize: none;
+}
+.btn-primary {
+    outline: none;
+    border-radius: 2px;
+    background-color: #000;
+    border: 1px solid #000;
+    padding: .5rem;
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin-bottom: .5rem;
+}
+.btn-primary:hover {
+    background-color: rgb(51, 51, 51);
+    box-shadow: 
+    0 0 10px 1px rgba(0, 0, 0, .2),
+    0 0 20px 1px #fff;
+}
+#under-button-label {
+    font-size: .8rem;
+}
+
+.activity-section {
+    display: none;
+    grid-area: 1 / 4 / 3 / 5;
+}
+#table-activity ul {
+    list-style: none;
+    padding: 0;
+    line-height: 1.6em;
+}

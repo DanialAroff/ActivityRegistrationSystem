@@ -1,0 +1,181 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding-top: 56px;
+  font-family: 'Montserrat', 'sans-serif';
+}
+
+nav {
+  background-color: #272727;
+  height: 60px;
+  font-size:17px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, .1);
+}
+nav ul {
+	outline:#E49D22;
+}
+footer{
+	background-color: #1D6796;
+	background-color: #272727;
+}
+.col a{
+	background-color: #E49D22;
+	border: none;
+	outline: none;
+	font-size: 15px;
+}
+.carousel-item {
+  height: 65vh;
+  min-height: 300px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  transition: all .6s;
+}
+
+.portfolio-item {
+  margin-bottom: 30px;
+}
+
+.services-area {
+  background-color: #fff;
+  padding-top: 70px;
+  padding-bottom:10px;
+}
+.section-title {
+  margin-bottom: 60px;
+}
+.section-title p {
+	color: #0d0d0d;
+	font-size: 10px;
+}
+.section-title h4 {
+	text-transform: capitalize;
+	font-size: 30px;
+	position: relative;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	font-weight: 600;
+}
+.section-title h4:before {
+	position: absolute;
+	content: "";
+	width: 60px;
+	height: 2px;
+	background-color: #00C896;
+	bottom: 0;
+	left: 50%;
+	margin-left: -30px;
+}
+.section-title h4:after {
+	position: absolute;
+	background-color: #00C896;
+	content: "";
+	width: 10px;
+	height: 10px;
+	bottom: -4px;
+	left: 50%;
+	margin-left: -5px;
+	border-radius: 50%;
+}
+.single-service {
+	border: 1px solid #eee;
+	padding: 30px 10px;
+	position: relative;
+	text-align: center;
+	margin-bottom: 30px;
+}
+.single-service i.fa {
+  width: 60px;
+  height: 60px;
+  background-color: #00C896;
+  font-size: 25px;
+  color: #fff;
+  line-height: 60px;
+  text-align:center;
+  margin-bottom:20px;
+}
+.single-service i.fa {
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+.single-service:hover i.fa {
+	border-radius: 50%;
+}
+.single-service h4 {
+	text-transform: capitalize;
+	font-size: 22px;
+	margin-bottom: 10px;
+	font-weight: 500;
+}
+.single-service h6{
+	font-weight:bold;
+}
+.form-inline{
+	padding-left: 400px;
+	border-radius: 15px;
+}
+.form-inline button {
+	background-color: #E49D22;
+	outline: none;
+	color: #fff;
+}
+
+.gap {
+  margin-right: 10px;
+}
+
+.column {
+  text-align: center;
+  width: 33.33%;
+  padding: 10px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.about-um h4{
+	font-weight:bold;
+}
+.about-um p{
+	font-size:15px;
+}
+.about-college h4{
+	font-weight:bold;
+}
+.about-college p{
+	font-size:15px;
+}
+.image-box h4{
+	font-weight:bold;
+}
+
+.section-title h4{
+  font-weight:bold;
+}
+.title {
+  margin-left: 500px;
+}
+.social-media-container {
+  height: 100px;
+  background-color: rgb(247, 247, 247);
+  display: flex;
+  align-items: center;
+  padding: 1rem 3rem;
+}
+.social-media-container i {
+  font-size: 2.2rem;
+  color: #3a3a3a;
+}
+.social-media-container i:first-child {
+  margin-right: 2rem;
+}
+
+	
